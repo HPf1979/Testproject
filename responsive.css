@@ -1,0 +1,34 @@
+@media (max-width:1050px) {
+
+    .hide-mobile {
+        display: none;
+    }
+
+    .left-part {
+        margin:0;
+    }
+
+    
+}
+
+
+@media (max-width:850px) {
+    .header-menu {
+        height:200px;
+        flex-direction: column;
+    }
+
+    .instagram {
+        height: 80px;
+    }
+
+
+}
+
+@media (max-width:640px) {
+
+    .left-part {
+       width:100%;
+    }
+
+}

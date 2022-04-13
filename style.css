@@ -1,0 +1,285 @@
+body {
+    margin: 0;
+    font-family: 'Urbanist', sans-serif;
+    scroll-behavior: smooth;
+
+}
+
+.main {
+    width: 100%;
+    gap: 12px;
+    display: flex;
+    justify-content: center;
+    background-color: #FAFAFA;
+}
+
+header {
+    border-bottom: 1px solid rgb(142, 142, 142, 0.5);
+}
+
+.d-none {
+    display:none;
+}
+
+.profiles {
+    height: 200px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.border-foto{
+    background-color: grey;
+    border: 2px solid black;
+    border-radius: 100%;
+    height: 75px;
+    width: 75px;
+}
+
+.name {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.header-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    height: 50px;
+}
+
+.header-middle {
+    background-color: rgb(240, 240, 240);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 0.4em;
+    /* margin: 0; */
+    gap: 1em;
+    padding-left: 1em;
+    /*height: fit-content;*/
+}
+
+.search-img {
+    margin-right: 20px;
+    padding-left: 10px;
+    cursor: pointer;
+
+}
+
+.text-area {
+    resize: none;
+    border: none;
+    background: rgb(240, 240, 240);
+    align-items: center;
+    font-size: 20px;
+    height: 1.7rem;
+    outline: unset;
+}
+
+.logos-img {
+    margin-right: 5px;
+    width: 40px
+}
+
+.left-part {
+    width: 50%;
+    margin-left:200px;
+}
+
+.foto-img {
+    height: 75px;
+    width: 75px;
+    border-radius: 100%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+#fotosMenu {
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 50px;
+    margin-top: 20px;
+    gap: 20px;
+    border: 1px solid rgb(138, 138, 138);
+    overflow: auto;
+    scroll-behavior: smooth;
+    height: 100px;
+    overflow-x: hidden;
+    text-align: center;
+
+}
+
+.arrow-left {
+    width: 40px;
+    background: rgb(138, 138, 138);
+    border-radius: 100%;
+    position: absolute;
+    left: 10px;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.arrow-right {
+    width: 40px;
+    background: rgb(138, 138, 138);
+    border-radius: 100%;
+    display: flex;
+    position: absolute;
+    right: 10px;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.right-part {
+    width: 250px;
+    margin-right:200px;
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    background-color: white;
+}
+
+.foto-img-post {
+    height: 60px;
+    width: 60px;
+    border-radius: 100%;
+    object-fit: cover;
+    margin: 10px;
+}
+
+
+.post-image {
+    width: 100%;
+    height:40%;
+   
+}
+
+.post {
+    border: 1px solid rgb(138, 138, 138);
+    margin-bottom:20px;
+    background-color: white;
+}
+
+.icon-like {
+    width: 25px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.icon-dislike {
+    width: 25px;
+    margin-right: 5px;
+}
+.icon-size {
+    width: 25px;
+    margin-right: 5px;
+}
+
+
+.icons {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.like {
+    padding: 10px;
+    font-size: bold;
+}
+
+.first-author {
+    padding: 10px;
+}
+
+.add-comment {
+    display:flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-top: 1px solid grey;
+}
+
+.add-comment-left {
+    display:flex;
+    align-items: center;
+    gap: 1em;
+    width: 100%;
+} 
+
+.input-comment {
+    resize: none;
+    border:none;
+    height: 1.2rem;
+    font-size: 15px;
+    flex: 1;
+    outline: unset;
+}
+
+.new-comment-button {
+    color: rgb(41, 145, 227);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    border: none;
+    background-color: white;
+    font-size: 15px;
+}
+
+.new-comment-button:hover{
+    cursor: pointer;
+    transition: all 125ms ease-in-out;
+    color: #3b6ea1;
+}
+
+.my-profile {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-left: 20px;
+    align-items: center;
+}
+
+.my-profile-1 {
+    display:flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.suggestion {
+    display: flex;
+    justify-content: space-between;
+    margin-top:20px;
+    margin-left: 20px;
+    align-items: center;
+}
+
+.grey {
+    color: #979A9A;
+}
+
+.footer {
+    color: #979A9A;
+    font-weight: bold;
+    margin-top: 100px;
+    margin-left: 20px;
+}
+
+.footer-1 {
+    margin-bottom: 20px;
+}
+
+.right-part-container {
+    position:sticky;
+    top: 50px;
+    width: 350px;
+}
+
+.like-number {
+    font-weight: bold;
+}

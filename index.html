@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Urbanist:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <script src="script.js"></script>
+    <script src="json.js"></script>
+    <script src="templates.js"></script>
+
+    <title>Instagram</title>
+    <link rel="icon" type="image/x-icon" href="img/Instagram_icon.png">
+</head>
+
+<body onload="render()">
+    <!-- hEADER -->
+    <header class="header-menu">
+        <div class="instagram"><img width="200px" src="img/instagram.jpg"></div>
+
+        <div class="header-middle">
+            <div onclick="searchButton()" class="search-img"><img src="img/search.png"></div>
+            <input onkeyup="searchButton()" id="search-post-text" class="text-area" placeholder="Suchen">
+
+        </div>
+        <div>
+            <img class="logos-img" src="img/home.png">
+            <img class="logos-img" src="img/paper.png">
+            <img class="logos-img" src="img/plus.png">
+            <img class="logos-img" src="img/compass.png">
+            <img class="logos-img" src="img/favorite.png">
+        </div>
+    </header>
+
+    <!-- LEFT PART-->
+
+    <div class="main">
+        <div class="left-part">
+            <div class="profiles">
+                <div id="arrowLeft">
+                    <img onclick="scrollToRight()" class="arrow-left" src="img/arrowleft.png"></img>
+                </div>
+
+                <div id="fotosMenu"></div>
+
+                <div id="arrowRight">
+                    <img onclick="scrollToLeft()" class="arrow-right" src="img/arrowright.png"></img>
+                </div>
+            </div>
+            <div id="searched_post"> </div>
+
+            <div id="posts">
+            </div>
+
+
+        </div>
+
+
+        <!-- RIGHT PART -->
+        <div class="right-part hide-mobile">
+            <div class="right-part-container">
+                <div class="my-profile">
+                    <div class="my-profile-1">
+                        <img class="foto-img" src="img/eichhörnchen.jpg">
+                        <div>
+                            <b> Lina </b> <br>
+                            <span class="grey"> Software Developer</span>
+                        </div>
+                    </div>
+                    <span>Wechseln</span>
+                </div>
+
+                <div class="suggestion">
+                    <span class="grey"> <b>Vorschläge für dich</b></span>
+                    <span> <b>Alle ansehen</b></span>
+                </div>
+
+                <div class="footer">
+                    <div class="footer-1">
+                        Info - Hilfe - Presse - API - Jobs - Datenrichtlinie - Nutzungsbedingungen - Standorte -
+                        Top-Konten
+                        - Hashtags - Sprache
+
+                    </div>
+                    <div>
+                        © 2022 INSTAGRAM FROM LINA
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>
